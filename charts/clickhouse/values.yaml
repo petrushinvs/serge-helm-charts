@@ -100,7 +100,7 @@ persistence:
 # ref: https://kubernetes.io/docs/concepts/configuration/pod-priority-preemption/#priorityclass
 priorityClassName: ~
 
-# -- pod deployment update strategy type.
+# -- pod deployment update stategy type.
 # ref: https://kubernetes.io/docs/concepts/workloads/controllers/deployment/#updating-a-deployment
 updateStrategy:
   type: RollingUpdate
@@ -126,7 +126,7 @@ backup:
   image:
     repository: altinity/clickhouse-backup
     pullPolicy: IfNotPresent
-    tag: "2.6.3"
+    tag: "2.5.29"
 
   # set value "" to disable cron backup
   schedule: "15 4 * * *"
@@ -244,3 +244,7 @@ clickhouse:
     #   password: pwd
     #   database: db
     #   schema: public
+  envs: {}
+    # AWS_REGION: eu-central-1
+    # AWS_ACCESS_KEY_ID: XXXX
+    # AWS_SECRET_ACCESS_KEY: YYYY
