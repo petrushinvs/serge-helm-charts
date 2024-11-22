@@ -6,19 +6,19 @@ type: application
 home: https://github.com/sergelogvinov/helm-charts
 icon: https://avatars.githubusercontent.com/u/44036562
 sources:
-- https://github.com/sergelogvinov/helm-charts/tree/master/charts/github-actions-runner
-- https://github.com/actions/actions-runner-controller.git
+  - https://github.com/sergelogvinov/helm-charts/tree/master/charts/github-actions-runner
+  - https://github.com/actions/actions-runner-controller.git
 keywords:
-- github-actions
-- conteiner
-- docker-registry
-- docker-mirror
+  - github-actions
+  - conteiner
+  - docker-registry
+  - docker-mirror
 maintainers:
-- name: sergelogvinov
-  url: https://github.com/sergelogvinov
-
-# This is the chart version. This version number should be incremented each time you make changes
-# to the chart and its templates, including the app version.
+  - name: sergelogvinov
+    url: https://github.com/sergelogvinov
+#
 # Versions are expected to follow Semantic Versioning (https://semver.org/)
-version: 1.6.8
-appVersion: 2.320.0
+version: 2.1.2
+#
+# renovate: datasource=docker depName=ghcr.io/sergelogvinov/github-actions-runner
+appVersion: 2.321.0

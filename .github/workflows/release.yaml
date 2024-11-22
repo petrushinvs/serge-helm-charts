@@ -5,11 +5,11 @@ on:
     branches:
       - main
     paths:
-      - 'charts/**'
+      - "charts/**"
 
 jobs:
   release:
-    name: "Publish release"
+    name: Publish release
     runs-on: ubuntu-latest
     permissions:
       contents: write
